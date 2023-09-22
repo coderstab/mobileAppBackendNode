@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const supabase = require('../db/db'); // Adjust the path as needed
+const authorize = require('../middleware/authorize');
 
 // Define the registration route
-router.post('/register', async (req, res) => {
+router.post('/register',authorize, async (req, res) => {
   try {
     const { email, password } = req.body;
 
