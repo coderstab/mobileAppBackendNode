@@ -2,7 +2,7 @@
   "name": "mobileappbackend",
   "version": "1.0.0",
   "description": "this is made for internal use.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
