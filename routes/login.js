@@ -3,7 +3,7 @@ const router = express.Router();
 const supabase = require('../db/db'); // Adjust the path as needed
 const authorize = require('../middleware/authorize');
 
-router.post('/login', authorize,async (req, res) => {
+router.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
   try {
