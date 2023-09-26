@@ -12,10 +12,15 @@ app.use(express.json()); // Parse JSON requests
 // Require route files
 const authRoutes = require('./routes/register');
 const loginRoutes = require('./routes/login');
+const sendOtp = require('./routes/otpSend');
+const verifyOtp = require('./routes/verifyOtp');
+
 
 // Use the route files as middleware
 app.use('/auth', authRoutes); 
 app.use('/auth', loginRoutes); 
+app.use('/auth', sendOtp); 
+app.use('/auth',verifyOtp);
   
   
 // Error handling middleware
