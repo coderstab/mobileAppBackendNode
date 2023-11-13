@@ -4,7 +4,7 @@ const supabase = require('../db/db'); // Adjust the path as needed
 // const authorize = require('../middleware/authorize');
 // const unirest = require('unirest');
 
-router.post('/demoData', async (req, res) => {
+router.post('/demo-data', async (req, res) => {
   
   try {
     const response = await axios.get('https://medicallogowear.com/wp-json/wc/v3/products/categories?per_page=100', {
