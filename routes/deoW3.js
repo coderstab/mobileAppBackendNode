@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const axios = require('axios'); // Import axios
 const supabase = require('../db/db'); // Adjust the path as needed
 // const authorize = require('../middleware/authorize');
 // const unirest = require('unirest');
@@ -22,6 +23,7 @@ router.post('/demo-data', async (req, res) => {
     res.json(response.data);
 } catch (error) {
     res.status(500).send('Error fetching data');
+    console.log(error);
 }
 
 
