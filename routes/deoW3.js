@@ -24,8 +24,7 @@ router.post('/demoData', async (req, res) => {
     res.status(500).send('Error fetching data');
 }
 
-  
- 
+
     
   });
 
