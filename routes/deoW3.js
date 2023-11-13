@@ -8,7 +8,7 @@ const supabase = require('../db/db'); // Adjust the path as needed
 router.get('/demo-data', async (req, res) => {
   
   try {
-    const response = await axios.get('https://medicallogowear.com/wp-json/wc/v3/', {
+    const response = await axios.get('https://medicallogowear.com/wp-json/wc/v3/products/categories', {
         headers: { 
             'sec-ch-ua': '"Chromium";v="118", "Google Chrome";v="118", "Not=A?Brand";v="99"', 
             'Accept': 'application/json, text/plain, */*', 
