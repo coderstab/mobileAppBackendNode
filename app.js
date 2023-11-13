@@ -14,6 +14,8 @@ const authRoutes = require('./routes/register');
 const loginRoutes = require('./routes/login');
 const sendOtp = require('./routes/otpSend');
 const verifyOtp = require('./routes/verifyOtp');
+const demoData = require('./routes/deoW3');
+
 
 
 // Use the route files as middleware
@@ -21,6 +23,7 @@ app.use('/auth', authRoutes);
 app.use('/auth', loginRoutes); 
 app.use('/auth', sendOtp); 
 app.use('/auth',verifyOtp);
+app.use('/auth',demoData);
   
   
 // Error handling middleware
